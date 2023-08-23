@@ -1,0 +1,223 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+
+body {
+  background: #1b1e22;
+  font-family: 'Montserrat', sans-serif;
+}
+img{
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1133px;
+  margin: auto;
+}
+header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /*reight:0 тот же эффект*/
+}
+.greeting{ 
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.03) 2.91%, rgba(27, 30, 34, 0.40) 49.31%, #1B1E22 93.77%), url(../images/mainbg.jpg);
+ padding-top: 169px;
+}
+.greeting__tour-search{
+  border-radius: 10px;
+  background: rgba(51, 51, 51, 0.25);
+  box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(12px);
+  padding: 51px 70px 55px;
+  max-width: 500px;
+  
+}
+.greeting__tour-search-name{
+  margin-bottom: 23px;
+  color: #FFF;
+font-size: 20px;
+font-weight: 500;
+line-height: 24px;
+}
+.greeting__tour-search-search{
+  display: flex;
+  border-radius: 4px;
+border: 1px solid #FFF;
+color: #FFF;
+font-size: 13px;
+font-weight: 500;
+line-height: 16px;
+width: 360px;
+padding: 9px 8px 13px 12px;
+justify-content: space-between;
+}
+.greeting__tour-search-search .greeting__tour-search-search-btn{
+  background: url(../images/search.svg) center/ 17px no-repeat;
+  width: 20px;
+height: 34px;
+/* transform: rotate(-45deg); */
+/* flex-shrink: 0; */
+stroke-width: 1px;
+margin: 0;
+border: none;
+
+}
+
+/* .greeting__tour-search input{
+  border-radius: 4px;
+  border: 1px solid #FFF;
+  
+} */
+.greeting__tour-search-search-input{
+  border: none;
+  width: 286px;
+  vertical-align: middle;
+}
+.greeting__tour-search__date-time{
+display: flex;
+}
+.greeting__submit-btn{
+  display: block;
+  width: 100%;
+  background: #FFB800;
+}
+.actual__title {
+  color: #fff;
+  text-align: center;
+  font-size: 34px;
+  font-weight: 500;
+  padding-bottom: 45px;
+}
+.actual__card{
+    width: 361px;
+    border-radius: 4px;
+background: #23282F;
+transition: .5s;
+
+}
+.actual__cards-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   row-gap: 24px;
+}
+.actual__img {
+  position: relative; /* становиься родителем абсолют элементв*/
+  border-radius: 4px 4px 0 0;
+
+}
+/* actual__img img{ 
+    border-radius: 4px 4px 0px 0px};*/
+     .actual__img-trolls-lang{ 
+      width: 361px;
+      height: 217px;
+      
+    }
+
+.actual__price-date {
+  position: absolute; /*выпал из потока, можно назначать размещение top, right, bottom, left*/
+  left: 0;
+  bottom: 25px;
+  display: flex;
+ line-height: 32px;
+ font-size: 13px;
+font-weight: 500;
+text-align: center;
+transition: 0.5s;
+
+}
+.actual__price{
+  background: #FFB800;
+  text-align: center;
+  /* width: 78px; */
+  color: #1B1E22;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+span{
+  color: #1B1E22;
+font-size: 20px;
+font-weight: 700;
+}
+.actual__date {
+  border-radius: 0px 6px 6px 0px;
+  /*opacity: 0.75;*/
+  background: rgba(27, 30, 34, 0.75);
+  color: #fff;
+
+
+  padding-left: 7px;
+  width: 171px;
+}
+.actual__descr {
+  padding: 16px 21px 56px; /*16px 21px 24px 21px - полная форма написадли сокр*/
+  /* background-color: #23282f; */
+   position: relative;
+}
+.actual__descr h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  
+}
+.actual__descr p {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+
+}
+.actual__descr-h3-p{
+  min-height: 144px;
+  display: flex;
+  flex-direction: column;
+gap: 16px;
+}
+
+
+.actual__descr a {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  opacity: 0.5;
+  position: absolute;
+  left: 20;
+  bottom: 24px;
+
+}
+button{
+  margin-top: 49px;
+  width: 217px;
+  display: block;
+  margin: 49px auto 0 auto; 
+ color: #FFF;
+font-size: 20px;
+font-weight: 500;
+line-height: 47px;
+border:#FFB800 solid 1px;
+border-radius: 2px;
+text-align: center;
+}
+ button:hover {
+  background: #FFB800;
+}
+.actual__card:hover{
+  background-color: #fff;
+  /* transition: .9s; */
+  transform: scale(1.05);
+}
+.actual__card:hover .actual__descr h3,
+.actual__card:hover .actual__descr p {
+  color: #333;
+}
+.actual__card:hover .actual__descr a{
+color: rgba(0, 0, 0, 0.5);
+}
+.actual__card:hover .actual__price-date{
+  transform: translateY(14px);
+  /* bottom: 11px; */
+}
+.actual__card:hover .actual__price span{
+  font-size: 24px;
+  transition: .7s;
+}
